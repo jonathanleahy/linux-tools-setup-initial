@@ -16,6 +16,8 @@ mkdir ~/dev/sync/work
 
 cd ~/dev/sync/work
 
+git clone git@github.com:jonathanleahy/local-tools.git
+
 git clone git@github.com:jonathanleahy/linux-tools-setup.git
 
 cd ~/dev/sync/work/linux-tools-setup
