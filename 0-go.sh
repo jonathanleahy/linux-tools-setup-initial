@@ -1,8 +1,10 @@
-./install_ansible.sh
+sudo apt update
+sudo apt install git
 
-ansible-playbook ssh.yml
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
 
-cat ~/.ssh/id_rsa.pub
-
-cd ~/dev/sync/
+~/miniconda3/bin/conda init bash
 
