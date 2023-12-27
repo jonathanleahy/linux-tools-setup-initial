@@ -15,9 +15,12 @@ cd linux-tools-setup-initial
 chmod +x ./ -R
 
 ./0-go.sh
+./1-go.sh
 
-ssh-keygen -t ed25519 -C "your_email@example.com"
 
+
+
+ssh-keygen -t ed25519 -C "j***@newtimesystems.com"
 eval "$(ssh-agent -s)"
 
 ssh-add ~/.ssh/id_ed25519
@@ -28,9 +31,11 @@ go to github, settings, add this rsa
 
 ssh -T git@github.com
 
-git config --global user.name "Your Name"
+git config --global user.name "J** L****"
 
-git config --global user.email "your_email@example.com"sudo apt install libsecret-1-0
+git config --global user.email "j**@newtimesystems.com"
+
+sudo apt install libsecret-1-0
 
 git config --global credential.helper 'cache --timeout 3600'
 

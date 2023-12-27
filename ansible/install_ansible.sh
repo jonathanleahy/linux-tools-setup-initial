@@ -6,3 +6,5 @@ conda install pywinrm
 conda install pyvmomi
 conda install ansible
 conda install ansible[azure]
+
+sudo apt install ansible-core
