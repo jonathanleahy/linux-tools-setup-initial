@@ -8,7 +8,7 @@
     - name: "ssh_passphrase"
       prompt: "Enter the passphrase for the SSH key"
     - name: "ansible_user"
-      prompt: "Enter your username"   #!!!!!!!!! MUST BE YOUR LOGGED IN NAME
+      prompt: "Enter your username"   #!!!!!!!!! MUST BE YOUR UBUNTU LOGGED IN NAME
 
   tasks:
     - name: generate SSH key "{{ssh_key_filename}}"
