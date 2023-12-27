@@ -16,11 +16,17 @@ chmod +x ./ -R
 ./0-go.sh
 
 eval "$(ssh-agent -s)"
+
 ssh-add ~/.ssh/id_rsa
+
 cat ~/.ssh/id_rsa.pub
+
 ssh -T git@github.com
+
 git config --global user.name "Your Name"
+
 git config --global user.email "your_email@example.com"sudo apt install libsecret-1-0
+
 git config --global credential.helper 'cache --timeout 3600'
 
 ./9-initial.sh
