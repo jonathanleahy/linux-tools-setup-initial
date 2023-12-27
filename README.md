@@ -2,7 +2,7 @@ Add instructions for 0 here
 
 sudo apt install gh
 
-mkdir ~/dev/boot/
+mkdir -p ~/dev/boot/
 
 cd ~/dev/boot
 
