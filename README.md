@@ -23,6 +23,8 @@ ssh-add ~/.ssh/id_rsa
 
 cat ~/.ssh/id_rsa.pub
 
+go to github, settings, add this rsa
+
 ssh -T git@github.com
 
 git config --global user.name "Your Name"
