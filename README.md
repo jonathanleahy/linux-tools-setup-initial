@@ -1,7 +1,6 @@
-Add instructions for 0 here
+Setting up the linux machine
 
 sudo apt install gh
-
 sudo apt install git
 
 mkdir -p ~/dev/boot/
@@ -19,4 +18,4 @@ chmod +x ./ -R
 sudo ./2-go.sh
 ./3-go.sh
 
-
+cd ~/dev/tools/local-tools/linux-tools-setup
