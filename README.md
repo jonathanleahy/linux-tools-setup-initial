@@ -2,6 +2,7 @@ Setting up the linux machine
 
 sudo apt install gh;
 sudo apt install git;
+sudo apt install vim;
 mkdir -p ~/dev/boot/;
 cd ~/dev/boot;
 git clone https://github.com/jonathanleahy/linux-tools-setup-initial.git;
