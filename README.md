@@ -16,13 +16,13 @@ chmod +x ./ -R
 
 ./0-go.sh
 
-ssh-keygen -C "your_email@example.com"
+ssh-keygen -t ed25519 -C "your_email@example.com"
 
 eval "$(ssh-agent -s)"
 
-ssh-add ~/.ssh/id_rsa
+ssh-add ~/.ssh/id_ed25519
 
-cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_ed25519.pub
 
 go to github, settings, add this rsa
 
