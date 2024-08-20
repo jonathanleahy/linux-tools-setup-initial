@@ -15,6 +15,8 @@ chmod +x ./ -R;
 
 sudo ./2-go.sh
 
+gh auth login
+
 ./3-go.sh
 
 cd ~/dev/tools/local-tools/linux-tools-setup
