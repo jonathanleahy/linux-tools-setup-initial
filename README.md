@@ -1,6 +1,20 @@
 # Linux Tools Setup
 
-This project contains scripts and playbooks for setting up a Linux machine with various development tools and configurations.
+This project contains scripts and playbooks for setting up a Linux machine with various development tools and configurations. 
+
+## What's Being Installed
+
+This setup process will install and configure the following main components:
+
+1. Miniconda3: A minimal installer for conda, an open-source package management system.
+2. Ansible: An open-source automation tool for configuration management and task automation.
+3. Python packages: Including pip, PyWinRM, and PyVmomi.
+4. Git: Distributed version control system.
+5. GitHub CLI: Command-line tool for interacting with GitHub.
+6. Vim: Highly configurable text editor.
+7. SSH key generation: For secure authentication.
+
+Additionally, it sets up a development environment by cloning specific repositories and configuring the workspace.
 
 ## Project Structure
 
@@ -31,7 +45,7 @@ Follow these steps to set up your Linux machine:
    ```bash
    mkdir -p ~/dev/boot/
    cd ~/dev/boot
-   gh repo clone jonathanleahy/linux-tools-setup-initial
+   git clone https://github.com/jonathanleahy/linux-tools-setup-initial.git
    cd linux-tools-setup-initial
    ```
 
@@ -62,14 +76,42 @@ Follow these steps to set up your Linux machine:
    cd ~/dev/tools/local-tools/linux-tools-setup
    ```
 
-## Script Descriptions
+## Script Descriptions and Installed Apps
 
-- `0-go.sh`: Updates apt, installs Miniconda, and initializes conda for bash.
-- `1-go-sh`: Runs the Ansible installation script.
-- `2-go.sh`: Runs an Ansible playbook to set up SSH keys and displays the public key.
-- `3-initial.sh`: Clones additional repositories and sets up the development environment.
-- `ansible/install_ansible.sh`: Installs Ansible and required dependencies.
-- `ansible/ssh.yml`: Ansible playbook for generating SSH keys.
+### 0-go.sh
+- Updates apt
+- Installs Miniconda3
+- Initializes conda for bash
+
+Installed apps:
+- Miniconda3: A minimal installer for conda, which is an open-source package management system and environment management system.
+
+### 1-go-sh
+- Runs the Ansible installation script
+
+### ansible/install_ansible.sh
+Installs Ansible and required dependencies:
+- Ansible: An open-source automation tool for configuration management, application deployment, and task automation.
+- Python3-pip: The package installer for Python
+- PyWinRM: A Python client for Windows Remote Management
+- PyVmomi: Python SDK for the VMware vSphere API
+- Ansible[azure]: Azure modules for Ansible
+
+### 2-go.sh
+- Runs an Ansible playbook to set up SSH keys
+- Displays the public SSH key
+
+### 3-initial.sh
+- Clones additional repositories:
+  - jonathanleahy/local-tools
+  - jonathanleahy/linux-tools-setup
+- Sets up the development environment
+
+### Additional Tools
+The following tools are installed as prerequisites:
+- GitHub CLI (gh): Command-line tool for interacting with GitHub
+- Git: Distributed version control system
+- Vim: Highly configurable text editor
 
 ## Notes
 
